@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+$font-family-sans-serif: "Montserrat";
+$enable-rounded: false;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.del-btn {
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+tr:hover .del-btn {
+  transform: scale(1);
+}
+
+.bg-transparent-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-secondary {
+  opacity: 0.9;
+}
+
+.sidebar {
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
